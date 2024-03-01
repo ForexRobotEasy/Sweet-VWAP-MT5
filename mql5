@@ -1,0 +1,137 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                            Sweet VWAP MT5        |
+//|                             https://www.forexroboteasy.com       |
+//|                                                           Forex Robot Easy Team|
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//| Calculate VWAP                                                   |
+//+------------------------------------------------------------------+
+double CalculateVWAP(int timePeriod)
+{
+   // Calculate VWAP logic here
+   double vwapValue = 0.0;
+   // ...
+   // Perform calculations based on volume and price of each trade
+   // ...
+   return vwapValue;
+}
+
+//+------------------------------------------------------------------+
+//| Real-time Updates                                                 |
+//+------------------------------------------------------------------+
+void RealTimeUpdates()
+{
+   // Continuous recalculation of VWAP and display updated value
+   while(true)
+   {
+      double vwapValue = CalculateVWAP(timePeriod);
+      // Update VWAP value on the platform
+      // ...
+      Sleep(1000); // Delay to avoid excessive updates
+   }
+}
+
+//+------------------------------------------------------------------+
+//| Order Execution                                                   |
+//+------------------------------------------------------------------+
+void ExecuteOrder(double vwapValue, int orderType)
+{
+   // Execute buy or sell orders based on VWAP value
+   // Consider market conditions to avoid market disturbance
+   // ...
+   if(orderType == ORDER_TYPE_BUY)
+   {
+      // Execute buy order
+      // ...
+   }
+   else if(orderType == ORDER_TYPE_SELL)
+   {
+      // Execute sell order
+      // ...
+   }
+}
+
+//+------------------------------------------------------------------+
+//| Charting Capabilities                                             |
+//+------------------------------------------------------------------+
+void ChartingCapabilities()
+{
+   // Integrate advanced charting capabilities for visual representation of VWAP
+   // Display VWAP line along with price movement of currency pair
+   // ...
+   // Add charting code here
+   // ...
+}
+
+//+------------------------------------------------------------------+
+//| Algorithmic Trading Support                                       |
+//+------------------------------------------------------------------+
+void AlgorithmicTradingSupport()
+{
+   // Provide necessary trade functions and interfaces for automated trading based on VWAP
+   // ...
+   // Add algorithmic trading code here
+   // ...
+}
+
+//+------------------------------------------------------------------+
+//| Market Indicators                                                 |
+//+------------------------------------------------------------------+
+void MarketIndicators()
+{
+   // Include customizable market indicators for better decision making
+   // Provide insights into market trends
+   // ...
+   // Add market indicators code here
+   // ...
+}
+
+//+------------------------------------------------------------------+
+//| Main Entry Point                                                  |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+   // Start real-time updates
+   RealTimeUpdates();
+   
+   // Execute buy or sell orders based on VWAP value
+   double vwapValue = CalculateVWAP(timePeriod);
+   ExecuteOrder(vwapValue, ORDER_TYPE_BUY);
+   
+   // Display chart with VWAP line
+   ChartingCapabilities();
+   
+   // Enable algorithmic trading support
+   AlgorithmicTradingSupport();
+   
+   // Include market indicators
+   MarketIndicators();
+   
+   return(INIT_SUCCEEDED);
+}
+
+void OnDeinit(const int reason)
+{
+   // Perform necessary cleanup on deinitialization
+   // ...
+}
+
+void OnTick()
+{
+   // Perform necessary actions on each tick
+   // ...
+}
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int start()
+{
+   // Perform necessary actions on start
+   // ...
+   return(0);
+}
+
+//+------------------------------------------------------------------+
